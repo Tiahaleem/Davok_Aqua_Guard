@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 a {
   text-decoration: none;
@@ -212,7 +215,7 @@ body {
 /* Section Home Pg */
 .hero_section {
   min-height: 90vh;
-  background: url("img/WhatsApp Image 2026-04-27 at 08.42.14.jpeg") center/cover no-repeat;
+  background: url("img/WhatsApp Image 2026-04-29 at 21.10.46.jpeg") center/cover no-repeat;
 }
 
 .hero_overlay {
