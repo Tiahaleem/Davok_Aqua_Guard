@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.premium_product_display_section {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  padding: 96px 0;
+  background: #fff;
+}
+
+.container_display_product {
+  width: min(100% - 40px, 1200px);
+  margin: 0 auto;
+}
+
+.container_grid_display_product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.img_display_product_container {
+  position: relative;
+  background: linear-gradient(rgb(249, 250, 251), rgb(236, 239, 244));
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(16, 47, 96, 0.16);
+  overflow: hidden;
+}
+
+.img_display_product_container img {
+  width: 100%;
+  height: 520px;
+  display: block;
+  object-fit: cover;
+}
+
+.premium_product_icon_txt_div {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(249, 158, 31, 0.15);
+  color: rgb(249, 158, 31);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-bottom: 14px;
+  padding: 6px 14px;
+  text-transform: uppercase;
+}
+
+.premium_product_txt_div_container h2 {
+  color: rgb(21, 28, 41);
+  font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.premium_product_txt_div_container > p {
+  color: rgb(90, 104, 124);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 18px;
+  max-width: 590px;
+}
+
+.package_size_product_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.package_size_detail_div {
+  background: #fff;
+  border: 1px solid rgba(217, 223, 232, 0.9);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(16, 47, 96, 0.05);
+  transition: 0.3s ease;
+}
+
+.package_size_detail_div:hover {
+  transform: translateY(-5px);
+  border-color: rgba(249, 158, 31, 0.55);
+  box-shadow: 0 16px 35px rgba(16, 47, 96, 0.1);
+}
+
+.package_txt {
+  color: rgb(16, 47, 96);
+  font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.package_pack_div {
+  color: rgb(21, 28, 41);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.package_txt_child_conatiner {
+  color: rgb(90, 104, 124);
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.premium_product_btn {
+  display: inline-flex;
+  margin-top: 32px;
+  background: rgb(16, 47, 96);
+  color: #fff;
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.premium_product_btn:hover {
+  background: rgb(19, 92, 174);
+  transform: translateY(-3px);
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+  .premium_product_display_section {
+    padding: 75px 0;
+  }
+
+  .container_grid_display_product {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .img_display_product_container img {
+    height: 420px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .premium_product_display_section {
+    padding: 60px 0;
+  }
+
+  .container_display_product {
+    width: min(100% - 28px, 1200px);
+  }
+
+  .img_display_product_container img {
+    height: 300px;
+  }
+
+  .premium_product_txt_div_container h2 {
+    font-size: 30px;
+  }
+
+  .premium_product_txt_div_container > p {
+    font-size: 15px;
+  }
+
+  .package_size_product_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .premium_product_btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.benefit {
+  background: linear-gradient(rgb(249, 250, 251), rgb(236, 239, 244));
+  padding: 96px 0;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.benefit_container {
+  width: min(100% - 40px, 1200px);
+  margin: 0 auto;
+}
+
+.benefit_txt_parent_container {
+  max-width: 768px;
+  margin-bottom: 52px;
+}
+
+.benefit_txt_inline {
+  display: inline-block;
+  background: #eaf1f8;
+  color: rgb(16, 47, 96);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 16px;
+  padding: 6px 14px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.benefit_txt_parent_container h2 {
+  color: rgb(21, 28, 41);
+  font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.benefit_txt_parent_container p {
+  color: rgb(90, 104, 124);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+.benefit_grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.benefits_box_container {
+  background: #fff;
+  border: 1px solid rgba(217, 223, 232, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(16, 47, 96, 0.06);
+  color: rgb(21, 28, 41);
+  padding: 26px;
+  transition: 0.3s ease;
+}
+
+.benefits_box_container:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 42px rgba(16, 47, 96, 0.11);
+  border-color: rgba(249, 158, 31, 0.45);
+}
+
+.benefits_box_icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgb(16, 47, 96), rgb(19, 92, 174));
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.benefits_box_icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.benefits_box_container h3 {
+  color: rgb(21, 28, 41);
+  font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.benefits_box_container p {
+  color: rgb(90, 104, 124);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+  .benefit_grid_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .benefit {
+    padding: 65px 0;
+  }
+
+  .benefit_container {
+    width: min(100% - 28px, 1200px);
+  }
+
+  .benefit_txt_parent_container {
+    margin-bottom: 34px;
+  }
+
+  .benefit_txt_parent_container h2 {
+    font-size: 30px;
+  }
+
+  .benefit_txt_parent_container p {
+    font-size: 15px;
+  }
+
+  .benefit_grid_container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .benefits_box_container {
+    padding: 24px;
+  }
+}
