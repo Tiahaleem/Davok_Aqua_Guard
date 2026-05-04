@@ -325,3 +325,119 @@ body {
     padding: 24px;
   }
 }
+/* Application Section */
+.application_section {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  padding: 96px 0;
+  background: #fff;
+}
+
+.application_container {
+  width: min(100% - 40px, 1200px);
+  margin: 0 auto;
+}
+
+.application_txt_parent_container {
+  max-width: 768px;
+  margin-bottom: 42px;
+}
+
+.application_txt_inline {
+  display: inline-block;
+  background: #eaf1f8;
+  color: rgb(16, 47, 96);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 16px;
+  padding: 6px 14px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.application_txt_parent_container h2 {
+  color: rgb(21, 28, 41);
+  font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.15;
+}
+
+.application_txt_parent_container p {
+  color: rgb(90, 104, 124);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 14px;
+}
+
+.application_grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.w_t_u_it_div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid rgba(217, 223, 232, 0.9);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 26px rgba(16, 47, 96, 0.05);
+  transition: 0.3s ease;
+}
+
+.w_t_u_it_div:hover {
+  transform: translateY(-4px);
+  border-color: rgba(249, 158, 31, 0.5);
+  box-shadow: 0 16px 36px rgba(16, 47, 96, 0.1);
+}
+
+.w_t_u_it_div svg {
+  flex-shrink: 0;
+}
+
+.w_t_u_it_div span {
+  color: rgb(21, 28, 41);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .application_grid_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .application_section {
+    padding: 65px 0;
+  }
+
+  .application_container {
+    width: min(100% - 28px, 1200px);
+  }
+
+  .application_txt_parent_container {
+    margin-bottom: 32px;
+  }
+
+  .application_txt_parent_container h2 {
+    font-size: 30px;
+  }
+
+  .application_grid_container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .w_t_u_it_div {
+    padding: 18px;
+  }
+}
