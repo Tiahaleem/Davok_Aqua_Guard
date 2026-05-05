@@ -334,11 +334,25 @@ body {
   }
 
   .hero_stats {
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: nowrap;
   }
-}
-/* what we do section */
+
+  .hero_stats div {
+    flex: 1;
+  }
+
+  .hero_stats h3 {
+    font-size: 24px;
+  }
+
+  .hero_stats p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}/* what we do section */
 .w_t_d_section {
   background: #f8fafc;
   color: rgb(21, 28, 41);
