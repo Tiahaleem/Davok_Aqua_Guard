@@ -121,40 +121,86 @@
 
     </div>
 
-    <form class="quote_form">
-      <h2>Request a Quote</h2>
-      <p>Tell us about your project. We'll respond with a quote or schedule an inspection.</p>
+<form class="quote_form" id="quoteForm">
 
-      <div class="form_grid">
-        <div class="form_group">
-          <label>Full name</label>
-          <input type="text" placeholder="John Doe">
-        </div>
+  <h2>Request a Quote</h2>
 
-        <div class="form_group">
-          <label>Phone number</label>
-          <input type="tel" placeholder="+234 800 000 0000">
-        </div>
-      </div>
+  <p>
+    Tell us about your project. We'll respond with a quote or schedule an inspection.
+  </p>
 
-      <div class="form_group">
-        <label>Email</label>
-        <input type="email" placeholder="you@example.com">
-      </div>
+  <div class="form_grid">
 
-      <div class="form_group">
-        <label>Service of interest</label>
-        <input type="text" placeholder="e.g. Waterproofing, Roofing, Painting">
-      </div>
+    <div class="form_group">
+      <label>Full name</label>
 
-      <div class="form_group">
-        <label>Project details</label>
-        <textarea placeholder="Tell us about your project, location, and timeline..."></textarea>
-      </div>
+      <input
+        type="text"
+        id="name_inp"
+        name="from_name"
+        placeholder="John Doe"
+        required
+      >
+    </div>
 
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="form_group">
+      <label>Phone number</label>
 
+      <input
+        type="tel"
+        id="phone_inp"
+        name="phone"
+        placeholder="+234 800 000 0000"
+        required
+      >
+    </div>
+
+  </div>
+
+  <div class="form_group">
+    <label>Email</label>
+
+    <input
+      type="email"
+      id="email_inp"
+      name="reply_to"
+      placeholder="you@example.com"
+      required
+    >
+  </div>
+
+  <div class="form_group">
+    <label>Service of interest</label>
+
+    <input
+      type="text"
+      id="service_inp"
+      name="service"
+      placeholder="e.g. Waterproofing, Roofing, Painting"
+      required
+    >
+  </div>
+
+  <div class="form_group">
+    <label>Project details</label>
+
+    <textarea
+      id="msg_inp"
+      name="message"
+      placeholder="Tell us about your project, location, and timeline..."
+      required
+    ></textarea>
+  </div>
+
+  <button
+    type="button"
+    id="sendBtn"
+    onclick="sendMail()"
+  >
+    Send Message
+  </button>
+
+</form>
   </div>
 </section>
 <section class="r_t_s_section">
@@ -225,6 +271,8 @@
     <p>Built on quality. Backed by trust.</p>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="contact.js"></script>
     <script src="home.js"></script>
 </body>
 </html>
